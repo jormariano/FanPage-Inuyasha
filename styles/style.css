@@ -22,28 +22,38 @@ body {
 /*--- HEADER ---*/
 
 header {
+    /*--- Con esta propiedad hacemos al contenedor flexible ---*/
+    display: flex;
+    justify-content: space-between;
     background-color: #ffe4c4;
     position: sticky;
     top: 0px;
+    z-index: 1;
+    height: 10vh;
+    width: 100%;
 }
 
 header img {
-    height: 100px;
+    height: 70px;
     width: auto;
+    margin: 0px 10px;
 }
 
 .menuNav {
-    background-color: #efbf83;
+    background-color: #ffe4c4;
     padding: 20px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .menuNav ul {
+    display: flex;
+    align-items: end;
     list-style-type: none;
     text-align: right;
 }
 
 .menuNav ul li {
-    display: inline-block;
     margin: 0px 10px;
 }
 
@@ -53,11 +63,13 @@ header img {
     font-weight: bold;
 }
 
+/*--- Pensar si uso o no el h1. Por ahora, no. 
 h1 {
     color: #6b0608;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
+---*/
 
 /*--- MAIN ---*/
 
@@ -65,12 +77,13 @@ h1 {
 
 .mainImage {
     background-image: url("../img/index-team-inuyasha.jpg");
-    height: 600px;
+    height: 800px;
+    width: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -114,6 +127,10 @@ h2 {
     margin: 15px;
     text-align: center;
     display: inline-block;
+    /*-- NO SE SI USARLO ACA O NO 
+    display: flex;
+    flex-wrap: wrap;
+    -- */
 }
 
 .temporadas div a {
