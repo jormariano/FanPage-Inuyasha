@@ -15,7 +15,7 @@
 /*--- UNICAS DOS PROPIEDADES POSIBLES DE APLICAR AL BODY ---*/
 
 body {
-    background-color: #f9e2c6;
+    background-color: #f7e3ca;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,18 +25,19 @@ header {
     /*--- Con esta propiedad hacemos al contenedor flexible ---*/
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffe4c4;
     position: sticky;
     top: 0px;
     z-index: 1;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
 }
 
 header img {
-    height: 70px;
+    height: 65px;
     width: auto;
-    margin: 0px 10px;
+    margin: 0px 30px;
 }
 
 .menuNav {
@@ -60,6 +61,7 @@ header img {
 .menuNav ul li a {
     text-decoration: none;
     color: #cc262a;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -76,7 +78,7 @@ h1 {
 /*--- INDEX ---*/
 
 .mainImage {
-    background-image: url("../img/index-team-inuyasha.jpg");
+    background-image: url("../img/galeria-04\ -\ copia.jpg");
     height: 800px;
     width: auto;
     background-attachment: fixed;
@@ -86,6 +88,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+.sinopsisAnime {
+    width: 100%;
+    height: 30vh;
+}
+
 h2 {
     color: #bb1518;
     font-size: 3rem;
@@ -93,28 +100,48 @@ h2 {
 }
 
 .sinopsisAnime p {
-    color: #e3830e;
+    color: #e30e0e;
     padding: 10px 30px;
     font-size: 2rem;
     font-weight: 200;
 }
 
-.imagenesTeamInuyasha {
-    background-color: #cc262a;
-    width: 100%;
-    height: 500px;
+.infoPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoPrincipal article {
     margin: 20px;
 }
 
-.imagenesTeamInuyasha h2 {
-    color: #ffffff;
+.TeamInuyasha {
+    background-color: #cc262a;
+    width: 100%;
+    height: 480px;
+    margin: 20px;
+    padding: 10px;
 }
 
-.imagenesTeamInuyasha img {
-    display: inline-block;
+.TeamInuyasha h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.imgTeamInuyasha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgTeamInuyasha img {
     height: 200px;
     width: 200px;
-    padding: 20px;
+    padding: 5px;
     margin: 0px 10px;
 }
 
@@ -176,14 +203,16 @@ h2 {
 /*--- FOOTER ---*/
 
 footer {
-    padding: 30px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer div a img {
     padding: 10px;
-    margin: 0px 5px;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
+    margin: 0px 10px;
+    height: 60px;
+    width: 60px;
 }
