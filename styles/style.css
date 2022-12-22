@@ -34,6 +34,8 @@ header {
     width: 100%;
 }
 
+/*--- PENSAR SI USAR O NO LA POSICION STICKY PARA LA IMAGEN O SOLO PARA EL NAV ---*/
+
 header img {
     height: 65px;
     width: auto;
@@ -143,6 +145,16 @@ h2 {
     width: 200px;
     padding: 5px;
     margin: 0px 10px;
+}
+
+.TeamCompleto {
+    display: flex;
+    justify-content: center;
+}
+
+.TeamCompleto img {
+    height: 200px;
+    width: 850px;
 }
 
 /*--- PAGE CAPITULOS ---*/
