@@ -169,18 +169,24 @@ h2 {
 }
 
 /*--- PAGE CAPITULOS ---*/
+.temporadas h2 {
+        font-weight: 700;
+}
 
-.temporadas div {
-    border: 2px solid #4e0606;
-    width: 320px;
-    height: 400px;
-    margin: 15px;
-    text-align: center;
-    display: inline-block;
-    /*-- APLICAR FLEXBOX O BOOTSTRAP 
+.temporadas .temporadasTodas {
     display: flex;
     flex-wrap: wrap;
-    -- */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temporadas .temporadasTodas div {
+    border: 2px solid #4e0606;
+    width: 350px;
+    height: 380px;
+    margin: 15px;
+    padding: 18px;
+    text-align: center;
 }
 
 .temporadas div a {
@@ -191,17 +197,15 @@ h2 {
     font-size: 1.3rem;
     font-weight: bold;
     border: 2px solid #070707;
-    display: inline-block;
 }
 
 .temporadas div p {
     text-decoration: none;
     color: #000000;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     font-weight: bold;
-    display: inline-block;
 }
 
 .temporadas div img {
