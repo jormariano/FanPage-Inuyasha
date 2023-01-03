@@ -148,6 +148,7 @@ h2 {
         margin-right: 100%;
         width: 300%;
     }
+
     to {
         margin-right: 0;
         width: 100%;
@@ -170,7 +171,7 @@ h2 {
 
 /*--- PAGE CAPITULOS ---*/
 .temporadas h2 {
-        font-weight: 700;
+    font-weight: 700;
 }
 
 .temporadas .temporadasTodas {
@@ -272,7 +273,7 @@ h2 {
 }
 
 /*--- PAGE OPINIONES ---*/
-/*--- APLICAR BOOTSTRAP --- */
+/*--- APLICAR BOOTSTRAP O FLEXBOX --- */
 .curiosidadYokai {
     color: #cc262a;
     padding: 10px 30px;
@@ -290,6 +291,11 @@ h2 {
 
 .opinionesParrafo form fieldset {
     padding: 30px;
+}
+
+.opinionesFans {
+    display: flex;
+
 }
 
 .TeamCompleto {
@@ -327,6 +333,7 @@ footer div a img {
 
     .mainImage {
         height: 600px;
+        background-attachment: scroll;
     }
 
     .sinopsisAnime div {
@@ -362,7 +369,7 @@ footer div a img {
     .mainImage {
         height: 500px;
     }
-    
+
     .sinopsisAnime p {
         margin-top: 0px;
         padding: 5px 10px;
@@ -426,7 +433,7 @@ footer div a img {
     .mainImage {
         height: 300px;
     }
-        
+
     .sinopsisAnime {
         flex-direction: column;
         height: 70vh;
@@ -471,6 +478,10 @@ footer div a img {
 
     .menuNav ul li a {
         font-size: 1rem;
+    }
+
+    .mainImage {
+        height: 200px;
     }
 
     .sinopsisAnime div {
