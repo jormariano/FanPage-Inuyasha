@@ -1,0 +1,198 @@
+/*--- Puede suceder que al pasar las mediaquery algunas no funcionen porque al utilizar la sintaxis de SASS se aumenta en gran medida
+la especificidad para aplicar propiedades a los elementos. Entonces hay que llamar a los elementos exactamente igual a como se compilo
+Hay que hacer el recorrido exacto a como se compilo ---*/
+
+@media screen and (max-width: 1110px) {
+    header {
+        height: 15vh;
+    }
+
+    .mainImage {
+        height: 600px;
+        background-attachment: scroll;
+    }
+
+    .sinopsisAnime div {
+        width: 450px;
+        height: 300px;
+    }
+
+    .sinopsisAnime h2 {
+        font-size: 1.5rem;
+    }
+
+    .sinopsisAnime p {
+        padding: 5px 15px;
+        font-size: 1.3rem;
+    }
+
+    .galeriaContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 350px;
+    }
+
+    .galeriaImg {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeria09 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainImage {
+        height: 500px;
+    }
+
+    .sinopsisAnime p {
+        margin-top: 0px;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+    }
+
+    .galeriaContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .galeriaImg {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeria02 {
+        grid-column: span 2;
+    }
+
+    .galeria08 {
+        grid-row-start: span 4;
+    }
+
+    .galeria09 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    header {
+        background-color: #f3d6b3;
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    .mainImage {
+        height: 400px;
+    }
+
+    .menuNav {
+        background-color: #f3d6b3;
+        padding: 2px;
+    }
+
+    .sinopsisAnime div {
+        width: 260px;
+    }
+
+    .sinopsisAnime h2 {
+        font-size: 1.2rem;
+    }
+
+    .sinopsisAnime p {
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainImage {
+        height: 300px;
+    }
+
+    .sinopsisAnime {
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .sinopsisAnime div {
+        margin-top: 35px;
+        width: 550px;
+        height: 150px;
+    }
+
+    .sinopsisVideo iframe {
+        width: 550px;
+        height: 300px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+
+    .galeriaContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .galeriaImg {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeria02 {
+        grid-column: span 2;
+    }
+
+    .galeria09 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    header {
+        height: 20vh;
+    }
+
+    .menuNav ul li a {
+        font-size: 1rem;
+    }
+
+    .mainImage {
+        height: 200px;
+    }
+
+    .sinopsisAnime div {
+        margin-top: 55px;
+        margin-left: 20px;
+        width: 430px;
+        height: 180px;
+    }
+
+    .sinopsisVideo iframe {
+        width: 450px;
+        height: 250px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .galeriaContainer {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .galeriaImg {
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .menuNav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .sinopsisVideo iframe {
+        width: 350px;
+        height: 220px;
+    }
+}

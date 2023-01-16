@@ -1,0 +1,257 @@
+/*--- INDEX ---*/
+.mainImage {
+    background-image: url("../img/index-fondo.jpg");
+    height: 800px;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.sinopsisAnime {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        width: 700px;
+
+        h2 {
+            color: #bb1518;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            color: #e30e0e;
+            padding: 10px 30px;
+            font-size: 1.5rem;
+            font-weight: 200;
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .sinopsisVideo {
+        margin: 20px;
+    }
+}
+
+.infoPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .TeamInuyasha {
+        background-color: #cc262a;
+        padding: 10px;
+
+        h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 10px;
+            /*--- ANIMACIONES ---*/
+            animation-name: teamtitulo;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+        }
+
+        /*--- KEYFRAME ---*/
+        @keyframes teamtitulo {
+            from {
+                margin-right: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+        .imgTeamInuyasha {
+            img {
+                height: 200px;
+                width: 200px;
+                padding: 5px;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
+
+
+/*--- CAPITULOS ---*/
+.temporadas{
+    h2 {
+        font-weight: 700;
+    }
+    .temporadasTodas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        div {
+            border: 2px solid #4e0606;
+            width: 350px;
+            height: 380px;
+            margin: 15px;
+            padding: 18px;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: #bb1518;
+                margin: 10px;
+                padding: 10px;
+                font-size: 1.3rem;
+                font-weight: bold;
+                border: 2px solid #070707;
+            }
+            p {
+                text-decoration: none;
+                color: #000000;
+                margin: 5px;
+                padding: 10px;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+    }
+}
+/*--- GALERIA ---*/
+.galeriaContainer {
+    width: 100%;
+    margin: 5px;
+    padding: 0px;
+    /*--- HABILITAR GRILLAS ---*/
+    display: grid;
+    /*--- DECLARAR FILAS 
+    UNA FORMA: grid-template-rows: 400px 400px 400px;---*/
+    grid-auto-rows: 400px;
+    /*--- DECLARAR COLUMNAS CON FRACCIONES. USAR SHORTCUTS ---*/
+    grid-template-columns: repeat(3, 1fr);
+    /*--- GAP P/ GENERAR ESPACIOS     
+    column-gap: 15px;
+    row-gap: 15px; ---*/
+    gap: 3px;
+
+    .galeriaImg {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    /* CONCEPTO DE LINEAS
+    grid-row-star: 1;
+    grid-row-end: 3;
+    grid-row: 1 / 3;
+    grid-row: span 3; */
+
+    .galeria01 {
+        grid-row: span 2;
+    }
+
+    .galeria02 {
+        grid-column: span 2;
+    }
+
+    .galeria04 {
+        grid-row: span 2;
+    }
+
+    .galeria05 {
+        grid-column: span 2;
+    }
+
+    .galeria09 {
+        grid-column: span 3;
+    }
+}
+
+/*--- PERSONAJES: Como utilizo bootstrap no tengo que anidar en scss ---*/
+
+/*--- OPINIONES ---*/
+.curiosidadYokai{
+    color: #cc262a;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    h3{
+
+    }
+    a{
+
+    }
+}
+.opinionesParrafo{
+    p{
+        color: #cc262a;
+        padding: 10px 30px;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .opinionesFans{
+        form{
+            fieldset{
+                padding: 30px;
+                div{
+                    label{
+
+                    }
+                    input{
+
+                    }
+                }
+                div{
+                    h3{
+
+                    }
+                }
+                div{
+                    label{
+
+                    }
+                    select{
+
+                    }
+                }
+                div{
+                    h3{
+
+                    }
+                    textarea{
+
+                    }
+                }
+                input{
+
+                }
+                input{
+
+                }
+            }
+        }
+    }
+}
+.TeamCompleto{
+    display: flex;
+    justify-content: center;
+    img{
+        height: 200px;
+        width: 850px;
+    }
+}
