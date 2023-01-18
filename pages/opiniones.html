@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css"/>
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!-- <link rel="stylesheet" href="../css/style.css" -->
     <title>Inuyasha</title>
 </head>
@@ -29,20 +29,21 @@
             <h3>Un dato curioro sobre Inuyasha</h3>
             <a href="https://neox.atresmedia.com/games/anime-manga/inugami-yokai-japones-que-inspiro-creacion-inuyasha_20220606629dcb34421363000151dc11.html"
                 target="_blank">Yokai
-                japones que inspiro el anime Inuyasha</a>
+                japonés que inspiro el anime Inuyasha</a>
         </section>
         <section class="opinionesParrafo">
             <p>
                 Deja todos los comentarios que quieras acerca de las cosas que te
-                gustaria que se sumen a esta pagina hecha por y para fanaticos !
+                gustaría que se sumemos a esta página hecha por y para fanáticos !
                 <!-- Para que un parrafo ocupe lineas de codigo debajo y no se vaya de la pantalla hay que utilizar alt + z -->
             </p>
-            <!-- Agregar Flexbox -->
-            <div class="opinionesFans">
-            <form>
-                <fieldset>
+        </section>
+        <form>
+            <div class="fansForm">
+                <div class="fansDatos">
+                    <h3>Dejanos tus comentarios!</h3>
                     <div>
-                        <label for="seudonimo">Seudonimo:</label>
+                        <label for="seudonimo">Seudónimo:</label>
                         <input type="text" id="seudonimo">
                     </div>
                     <div>
@@ -50,8 +51,15 @@
                         <input type="email" id="email">
                     </div>
                     <div>
-                        <h3>¿Cuál es tu personaje favorito?</h3>
+                        <label for="info">¿Te gustaría recibir información?</label>
+                        <select name="info" id="">Si
+                            <option value="">Si</option>
+                            <option value="">No</option>
+                        </select>
                     </div>
+                </div>
+                <div class="fansDatos">
+                    <h3>¿Cuál es tu personaje favorito?</h3>
                     <div>
                         <label for="favoritoinu">Equipo Inuyasha</label>
                         <select name="favoritoinu" id="">Equipo Inuyasha
@@ -81,18 +89,18 @@
                             <option value="">Kohaku</option>
                         </select>
                     </div>
-                    <div>
-                        <h3>Dejanos tus opiniones!</h3>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <input type="submit">
-                    <input type="reset">
-                    </fieldset>
                 </div>
-                </fieldset>
-            </form>
-        </section>
-        <div class="TeamCompleto">
+                <div class="fansDatos">
+                    <h3>Mensaje:</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="fansEnviar">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <div class="teamCompleto">
             <img src="../img/opiniones-team.jpg" alt="team" />
         </div>
     </main>

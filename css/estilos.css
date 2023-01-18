@@ -65,35 +65,36 @@ header {
 
 .sinopsisAnime {
   width: 100%;
-  height: 50vh;
+  height: 45vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
   .sinopsisAnime div {
-    width: 700px; }
+    width: 550px; }
     .sinopsisAnime div h2 {
       color: #bb1518;
       font-size: 2rem;
       text-align: center; }
     .sinopsisAnime div p {
       color: #e30e0e;
-      padding: 10px 30px;
+      padding: 10px 25px;
       font-size: 1.5rem;
-      font-weight: 200; }
+      font-weight: 200;
+      text-align: center; }
       .sinopsisAnime div p span {
         font-weight: 500; }
   .sinopsisAnime .sinopsisVideo {
-    margin: 20px; }
+    margin: 10px; }
 
 .infoPrincipal {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .infoPrincipal .TeamInuyasha {
+  .infoPrincipal .teamInuyasha {
     background-color: #cc262a;
     padding: 10px;
     /*--- KEYFRAME ---*/ }
-    .infoPrincipal .TeamInuyasha h3 {
+    .infoPrincipal .teamInuyasha h3 {
       color: #ffffff;
       font-size: 1.5rem;
       text-align: center;
@@ -111,14 +112,21 @@ header {
   to {
     margin-right: 0;
     width: 100%; } }
-    .infoPrincipal .TeamInuyasha .imgTeamInuyasha img {
-      height: 200px;
-      width: 200px;
-      padding: 5px;
-      margin: 0px 10px; }
+    .infoPrincipal .teamInuyasha .imgTeamInuyasha {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .infoPrincipal .teamInuyasha .imgTeamInuyasha img {
+        height: 200px;
+        width: 200px;
+        padding: 5px;
+        margin: 0px 10px; }
 
 /*--- CAPITULOS ---*/
 .temporadas h2 {
+  color: #bb1518;
+  font-size: 2rem;
+  text-align: center;
   font-weight: 700; }
 
 .temporadas .temporadasTodas {
@@ -199,17 +207,41 @@ header {
 
 .opinionesParrafo p {
   color: #cc262a;
-  padding: 10px 30px;
+  padding: 5px 20px;
   font-size: 1.5rem;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
 
-.opinionesParrafo .opinionesFans form fieldset {
-  padding: 30px; }
+form {
+  margin: 20px;
+  padding: 10px;
+  font-weight: bold;
+  color: #b01010ce; }
+  form .fansForm {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #f9dcdcce; }
+    form .fansForm .fansDatos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around; }
+      form .fansForm .fansDatos h3 {
+        margin: 5px;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px 1px #000000; }
+      form .fansForm .fansDatos div {
+        padding: 10px; }
+    form .fansForm .fansEnviar input {
+      margin: 10px;
+      padding: 3px; }
 
-.TeamCompleto {
+.teamCompleto {
   display: flex;
-  justify-content: center; }
-  .TeamCompleto img {
+  justify-content: center;
+  align-items: center; }
+  .teamCompleto img {
     height: 200px;
     width: 850px; }
 
@@ -235,13 +267,14 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     height: 600px;
     background-attachment: scroll; }
   .sinopsisAnime div {
-    width: 450px;
-    height: 300px; }
+    width: 500px;
+    height: 300px;
+    margin-bottom: 40px; }
   .sinopsisAnime h2 {
-    font-size: 1.5rem; }
+    font-size: 0.8rem; }
   .sinopsisAnime p {
     padding: 5px 15px;
-    font-size: 1.3rem; }
+    font-size: 0.8rem; }
   .galeriaContainer {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 350px; }
@@ -345,4 +378,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     font-size: 0.8rem; }
   .sinopsisVideo iframe {
     width: 350px;
-    height: 220px; } }
+    height: 220px; }
+  .teamCompleto img {
+    height: 150px;
+    width: 400px; } }

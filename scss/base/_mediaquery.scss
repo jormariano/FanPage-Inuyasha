@@ -13,17 +13,18 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     }
 
     .sinopsisAnime div {
-        width: 450px;
+        width: 500px;
         height: 300px;
+        margin-bottom: 40px;
     }
 
     .sinopsisAnime h2 {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
 
     .sinopsisAnime p {
         padding: 5px 15px;
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
 
     .galeriaContainer {
@@ -194,5 +195,12 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     .sinopsisVideo iframe {
         width: 350px;
         height: 220px;
+    }
+
+    .teamCompleto {
+    img {
+        height: 150px;
+        width: 400px;
+    }
     }
 }
