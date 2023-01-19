@@ -14,17 +14,18 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 
     .sinopsisAnime div {
         width: 500px;
-        height: 300px;
-        margin-bottom: 40px;
+        height: 350px;
+        margin-bottom: 10px;
     }
 
     .sinopsisAnime h2 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .sinopsisAnime p {
         padding: 5px 15px;
-        font-size: 0.8rem;
+        font-size: 0.2rem;
+        font-weight: 100;
     }
 
     .galeriaContainer {
@@ -50,7 +51,10 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     .sinopsisAnime p {
         margin-top: 0px;
         padding: 5px 10px;
-        font-size: 1.2rem;
+    }
+
+    .sinopsisVideo iframe {
+        width: 450px;
     }
 
     .galeriaContainer {
@@ -92,17 +96,26 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
         padding: 2px;
     }
 
+    .sinopsisAnime {
+        flex-direction: column;
+    }
+
     .sinopsisAnime div {
-        width: 260px;
+        width: 100%;
+        height: 30vh;
+        margin-top: 10px;
     }
 
     .sinopsisAnime h2 {
-        font-size: 1.2rem;
+        font-size: 0.2rem;
     }
 
     .sinopsisAnime p {
-        padding: 2px 5px;
-        font-size: 1rem;
+        padding: 2px;
+        font-weight: 50;
+    }
+    .sinopsisVideo iframe {
+        width: 450;
     }
 }
 

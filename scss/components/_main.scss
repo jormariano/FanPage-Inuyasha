@@ -12,23 +12,23 @@
 
 .sinopsisAnime {
     width: 100%;
-    height: 45vh;
+    height: 55vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     div {
-        width: 550px;
+        width: 500px;
 
         h2 {
-            color: #bb1518;
+            color: nth($colores, 1);
             font-size: 2rem;
             text-align: center;
         }
 
         p {
-            color: #e30e0e;
-            padding: 10px 25px;
+            color: nth($colores, 2);
+            padding: 5px 20px;
             font-size: 1.5rem;
             font-weight: 200;
             text-align: center;
@@ -41,6 +41,8 @@
 
     .sinopsisVideo {
         margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -50,7 +52,7 @@
     align-items: center;
 
     .teamInuyasha {
-        background-color: #cc262a;
+        background-color: nth($colores, 4);
         padding: 10px;
 
         h3 {
@@ -96,7 +98,7 @@
 /*--- CAPITULOS ---*/
 .temporadas {
     h2 {
-        color: #bb1518;
+        color: nth($colores, 1);
         font-size: 2rem;
         text-align: center;
         font-weight: 700;
@@ -118,7 +120,7 @@
 
             a {
                 text-decoration: none;
-                color: #bb1518;
+                color: nth($colores, 1);
                 margin: 10px;
                 padding: 10px;
                 font-size: 1.3rem;
@@ -200,23 +202,19 @@
 
 /*--- OPINIONES ---*/
 .curiosidadYokai {
-    color: #cc262a;
-    padding: 10px 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 300;
-    h3 {}
-
-    a {}
+    color: nth($colores, 4);
+    @include curiosidad (10px 30px, center, 1.5rem, 300)
+    h3 {
+        text-shadow: 1px 1px 1px #000000;
+    }
 }
 
 .opinionesParrafo {
     p {
-        color: #cc262a;
-        padding: 5px 20px;
-        font-size: 1.5rem;
-        font-weight: 300;
-        text-align: center;
+        background-color: $fondo;
+        color: nth($colores, 4);
+        margin: 20px;
+        @include curiosidad (5px 20px, left, 1.2rem, 400)
     }
 }
 
@@ -224,13 +222,13 @@ form {
     margin: 20px;
     padding: 10px;
     font-weight: bold;
-    color: #b01010ce;
+    color: nth($colores, 5);
 
     .fansForm {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        background-color:#f9dcdcce;
+        background-color: $fondo;
 
         .fansDatos {
             display: flex;
@@ -246,16 +244,6 @@ form {
 
             div {
                 padding: 10px;
-                label {}
-
-                input {}
-
-                select {
-                    option {}
-
-                }
-
-                textarea {}
             }
         }
         .fansEnviar {
@@ -268,9 +256,7 @@ form {
 }
 
 .teamCompleto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center)
 
     img {
         height: 200px;

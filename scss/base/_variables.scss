@@ -1,4 +1,30 @@
 /*--- Las variables son un espacio reservado de memoria para almacenar datos. Se declaran utilizando el signo $nombre: valorasignado;
 Ejemplo $color-fondo: #f7e3ca;
 Luego nosotros llamamos a la variable en cada documento y momento que se utilice, en vez de llamar al color cada vez. Asi se realizan
-modificaciones masivas en los proyectos ---*/
+modificaciones masivas en los proyectos 
+Las listas agrupan varios valores de la misma categoria separados por una coma 
+Los mapas permiten agrupar propiedades. Dentro siempre hay un juego de pares, siempre hay que llamar a una KEY y a un VALUE 
+font-size: 1.4rem;
+text-shadow: 1px 1px 1px #000000; ---*/
+
+$fondo: #f6e9e9e5;
+
+$colores:
+#bb1518,
+#e10e0e,
+#e30e0e, 
+#cc262a,
+#b01010ce;
+
+@mixin curiosidad ($pad, $align, $size, $weight){
+    padding: $pad;
+    text-align: $align;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
