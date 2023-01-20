@@ -28,7 +28,7 @@ header {
   align-items: center;
   background-color: #ffe4c4;
   position: sticky;
-  top: 0px;
+  margin: 0px;
   z-index: 1;
   height: 10vh;
   width: 100%; }
@@ -57,22 +57,23 @@ header {
           font-weight: bold; }
 
 /*--- INDEX ---*/
-.mainImage {
-  background-image: url("../img/index-fondo.jpg");
-  height: 800px;
-  width: auto;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 20px; }
-
 h1 {
+  margin-bottom: 0px;
   color: #b01010ce;
   padding: 2px;
   text-align: center;
   font-size: 2rem;
   font-weight: 700; }
+
+.mainImage {
+  background-image: url("../img/index-fondo.jpg");
+  height: 800px;
+  width: auto;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px; }
 
 .sinopsisAnime {
   width: 100%;
@@ -282,8 +283,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
   header {
     height: 15vh; }
   .mainImage {
-    height: 600px;
-    background-attachment: scroll; }
+    height: 600px; }
   .sinopsisAnime div {
     width: 500px;
     height: 350px;
@@ -329,11 +329,11 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     background-color: #f3d6b3;
     flex-direction: column;
     height: 18vh; }
-  .mainImage {
-    height: 400px; }
   .menuNav {
     background-color: #f3d6b3;
     padding: 2px; }
+  .mainImage {
+    height: 400px; }
   .sinopsisAnime {
     flex-direction: column; }
   .sinopsisAnime div {

@@ -1,18 +1,19 @@
 /*--- INDEX ---*/
+h1{
+    margin-bottom: 0px;
+    color: nth($colores, 5);
+    @include curiosidad (2px, center, 2rem, 700);
+}
+
 .mainImage {
     background-image: url("../img/index-fondo.jpg");
     height: 800px;
     width: auto;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-}
-
-h1{
-    color: nth($colores, 5);
-    @include curiosidad (2px, center, 2rem, 700);
 }
 
 .sinopsisAnime {
@@ -206,8 +207,8 @@ h1{
 /*--- OPINIONES ---*/
 .curiosidadYokai {
     color: nth($colores, 4);
-    @include curiosidad (10px 30px, center, 1.5rem, 300)
-    h3 {
+    @include curiosidad (10px 30px, center, 1.5rem, 300);
+    h3{
         text-shadow: 1px 1px 1px #000000;
     }
 }
@@ -217,7 +218,7 @@ h1{
         background-color: $fondo;
         color: nth($colores, 4);
         margin: 20px;
-        @include curiosidad (5px 20px, left, 1.2rem, 400)
+        @include curiosidad (5px 20px, left, 1.2rem, 400);
     }
 }
 
@@ -259,8 +260,7 @@ form {
 }
 
 .teamCompleto {
-    @include flex (flex, center, center)
-
+    @include flex (flex, center, center);
     img {
         height: 200px;
         width: 850px;
