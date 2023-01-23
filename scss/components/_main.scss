@@ -1,8 +1,19 @@
 /*--- INDEX ---*/
-h1{
+/*--- Pseudo Elemento aplicado en h1 ---*/
+h1::first-letter {
+    font-size: 45px;
+    color: #670a0ace;
+}
+
+h1 {
     margin-bottom: 0px;
     color: nth($colores, 5);
     @include curiosidad (2px, center, 2rem, 700);
+}
+
+h1 span {
+    font-size: 40px;
+    color: #670a0ace;
 }
 
 .mainImage {
@@ -102,6 +113,9 @@ h1{
 }
 
 /*--- CAPITULOS ---*/
+
+/*--- Aplicar pseudoclass div:nth-clid(4 o odd o even o 3n){} ---*/
+
 .temporadas {
     h2 {
         color: nth($colores, 1);
@@ -208,7 +222,8 @@ h1{
 .curiosidadYokai {
     color: nth($colores, 4);
     @include curiosidad (10px 30px, center, 1.5rem, 300);
-    h3{
+
+    h3 {
         text-shadow: 1px 1px 1px #000000;
     }
 }
@@ -248,8 +263,18 @@ form {
 
             div {
                 padding: 10px;
+
+                input {
+                    outline: none;
+                }
+
+                input:focus {
+                    border: 2px solid rgb(109, 11, 11);
+                    border-radius: 5px;
+                }
             }
         }
+
         .fansEnviar {
             input {
                 margin: 10px;
@@ -261,6 +286,7 @@ form {
 
 .teamCompleto {
     @include flex (flex, center, center);
+
     img {
         height: 200px;
         width: 850px;
