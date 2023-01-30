@@ -4,7 +4,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 
 @media screen and (max-width: 1110px) {
     header {
-        height: 15vh;
+        height: 10vh;
     }
     
     .mainImage {
@@ -83,7 +83,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     header {
         background-color: #f3d6b3;
         flex-direction: column;
-        height: 18vh;
+        height: 15vh;
     }
 
     .menuNav {
@@ -160,9 +160,16 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     }
 }
 
+@media screen and (max-width: 650px){
+    .menuNav ul {
+        padding: 0px;
+    }
+
+}
+
 @media screen and (max-width: 570px) {
     header {
-        height: 20vh;
+        height: 13vh;
     }
 
     .menuNav ul li a {

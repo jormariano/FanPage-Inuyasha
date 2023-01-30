@@ -144,6 +144,10 @@ h1 span {
         width: 200px;
         padding: 5px;
         margin: 0px 10px; }
+      .infoPrincipal .teamInuyasha .imgTeamInuyasha h4 {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center; }
 
 /*--- CAPITULOS ---*/
 /*--- Aplicar pseudoclass div:nth-clid(4 o odd o even o 3n){} ---*/
@@ -162,28 +166,28 @@ h1 span {
   .temporadas .temporadasTodas div {
     border: 2px solid #4e0606;
     width: 350px;
-    height: 380px;
+    height: 300px;
     margin: 15px;
-    padding: 18px;
+    padding: 10px;
     text-align: center; }
     .temporadas .temporadasTodas div a {
       text-decoration: none;
       color: #bb1518;
       margin: 10px;
-      padding: 10px;
+      padding: 8px;
       font-size: 1.3rem;
-      font-weight: bold;
-      border: 2px solid #070707; }
+      font-weight: bold; }
     .temporadas .temporadasTodas div p {
       text-decoration: none;
       color: #000000;
       margin: 5px;
-      padding: 10px;
+      padding: 5px;
       font-size: 1rem;
       font-weight: bold; }
     .temporadas .temporadasTodas div img {
       width: 300px;
-      height: 200px; }
+      height: 200px;
+      margin-top: 10px; }
 
 /*--- GALERIA ---*/
 .galeriaContainer {
@@ -300,7 +304,7 @@ la especificidad para aplicar propiedades a los elementos. Entonces hay que llam
 Hay que hacer el recorrido exacto a como se compilo ---*/
 @media screen and (max-width: 1110px) {
   header {
-    height: 15vh; }
+    height: 10vh; }
   .mainImage {
     height: 600px; }
   .sinopsisAnime div {
@@ -347,7 +351,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
   header {
     background-color: #f3d6b3;
     flex-direction: column;
-    height: 18vh; }
+    height: 15vh; }
   .menuNav {
     background-color: #f3d6b3;
     padding: 2px; }
@@ -393,9 +397,13 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
   .galeria09 {
     grid-column: span 2; } }
 
+@media screen and (max-width: 650px) {
+  .menuNav ul {
+    padding: 0px; } }
+
 @media screen and (max-width: 570px) {
   header {
-    height: 20vh; }
+    height: 13vh; }
   .menuNav ul li a {
     font-size: 1rem; }
   .mainImage {

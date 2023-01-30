@@ -108,6 +108,12 @@ h1 span {
                 padding: 5px;
                 margin: 0px 10px;
             }
+
+            h4 {
+                color: #ffffff;
+                font-size: 1.5rem;
+                text-align: center;
+            }
         }
     }
 }
@@ -131,26 +137,25 @@ h1 span {
         div {
             border: 2px solid #4e0606;
             width: 350px;
-            height: 380px;
+            height: 300px;
             margin: 15px;
-            padding: 18px;
+            padding: 10px;
             text-align: center;
 
             a {
                 text-decoration: none;
                 color: nth($colores, 1);
                 margin: 10px;
-                padding: 10px;
+                padding: 8px;
                 font-size: 1.3rem;
                 font-weight: bold;
-                border: 2px solid #070707;
             }
 
             p {
                 text-decoration: none;
                 color: #000000;
                 margin: 5px;
-                padding: 10px;
+                padding: 5px;
                 font-size: 1rem;
                 font-weight: bold;
             }
@@ -158,6 +163,7 @@ h1 span {
             img {
                 width: 300px;
                 height: 200px;
+                margin-top: 10px;
             }
         }
 
