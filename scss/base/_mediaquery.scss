@@ -6,7 +6,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     header {
         height: 10vh;
     }
-    
+
     .mainImage {
         height: 600px;
     }
@@ -94,14 +94,15 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     .mainImage {
         height: 400px;
     }
-    
+
     .sinopsisAnime {
+        height: 90vh;
         flex-direction: column;
     }
 
     .sinopsisAnime div {
         width: 100%;
-        height: 30vh;
+        height: 35vh;
         margin-top: 10px;
     }
 
@@ -113,6 +114,7 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
         padding: 2px;
         font-weight: 50;
     }
+
     .sinopsisVideo iframe {
         width: 450;
     }
@@ -121,24 +123,6 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 @media screen and (max-width: 800px) {
     .mainImage {
         height: 300px;
-    }
-
-    .sinopsisAnime {
-        flex-direction: column;
-        height: 70vh;
-    }
-
-    .sinopsisAnime div {
-        margin-top: 35px;
-        width: 550px;
-        height: 150px;
-    }
-
-    .sinopsisVideo iframe {
-        width: 550px;
-        height: 300px;
-        margin-left: 25px;
-        margin-bottom: 30px;
     }
 
     .galeriaContainer {
@@ -160,11 +144,18 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .menuNav ul {
         padding: 0px;
     }
 
+    .mainImage {
+        margin-bottom: 5px;
+    }
+
+    .sinopsisAnime div {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -181,17 +172,17 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
     }
 
     .sinopsisAnime div {
-        margin-top: 55px;
-        margin-left: 20px;
-        width: 430px;
-        height: 180px;
-    }
+        margin: 0px;
+        padding: 5px;
+        height: 35vh;
 
-    .sinopsisVideo iframe {
-        width: 450px;
-        height: 250px;
-        margin-left: 50px;
-        margin-bottom: 50px;
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
     }
 
     .galeriaContainer {
@@ -211,15 +202,50 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
         font-size: 0.8rem;
     }
 
+    .sinopsisAnime {
+        height: 80vh;
+
+        div {
+            height: 40vh;
+
+            p {
+                padding: 0px;
+            }
+        }
+    }
+
     .sinopsisVideo iframe {
         width: 350px;
-        height: 220px;
+        height: 200px;
     }
 
     .teamCompleto {
-    img {
-        height: 150px;
-        width: 400px;
+        img {
+            height: 150px;
+            width: 400px;
+        }
     }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 10vh;
+
+        a {
+            img {
+                height: 40px;
+                margin: 0px 10px;
+            }
+        }
+
+        nav {
+            ul {
+                padding-right: 0px;
+
+                li {
+                    margin: 0px 5px;
+                }
+            }
+        }
     }
 }

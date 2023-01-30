@@ -358,10 +358,11 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
   .mainImage {
     height: 400px; }
   .sinopsisAnime {
+    height: 90vh;
     flex-direction: column; }
   .sinopsisAnime div {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     margin-top: 10px; }
   .sinopsisAnime h2 {
     font-size: 0.2rem; }
@@ -374,18 +375,6 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 @media screen and (max-width: 800px) {
   .mainImage {
     height: 300px; }
-  .sinopsisAnime {
-    flex-direction: column;
-    height: 70vh; }
-  .sinopsisAnime div {
-    margin-top: 35px;
-    width: 550px;
-    height: 150px; }
-  .sinopsisVideo iframe {
-    width: 550px;
-    height: 300px;
-    margin-left: 25px;
-    margin-bottom: 30px; }
   .galeriaContainer {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px; }
@@ -399,7 +388,11 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 
 @media screen and (max-width: 650px) {
   .menuNav ul {
-    padding: 0px; } }
+    padding: 0px; }
+  .mainImage {
+    margin-bottom: 5px; }
+  .sinopsisAnime div {
+    height: 40vh; } }
 
 @media screen and (max-width: 570px) {
   header {
@@ -409,15 +402,13 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
   .mainImage {
     height: 200px; }
   .sinopsisAnime div {
-    margin-top: 55px;
-    margin-left: 20px;
-    width: 430px;
-    height: 180px; }
-  .sinopsisVideo iframe {
-    width: 450px;
-    height: 250px;
-    margin-left: 50px;
-    margin-bottom: 50px; }
+    margin: 0px;
+    padding: 5px;
+    height: 35vh; }
+    .sinopsisAnime div h2 {
+      font-size: 1.7rem; }
+    .sinopsisAnime div p {
+      font-size: 1.2rem; }
   .galeriaContainer {
     grid-template-columns: 1fr;
     grid-auto-rows: 250px; }
@@ -429,9 +420,26 @@ Hay que hacer el recorrido exacto a como se compilo ---*/
 @media screen and (max-width: 470px) {
   .menuNav ul li a {
     font-size: 0.8rem; }
+  .sinopsisAnime {
+    height: 80vh; }
+    .sinopsisAnime div {
+      height: 40vh; }
+      .sinopsisAnime div p {
+        padding: 0px; }
   .sinopsisVideo iframe {
     width: 350px;
-    height: 220px; }
+    height: 200px; }
   .teamCompleto img {
     height: 150px;
     width: 400px; } }
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 10vh; }
+    header a img {
+      height: 40px;
+      margin: 0px 10px; }
+    header nav ul {
+      padding-right: 0px; }
+      header nav ul li {
+        margin: 0px 5px; } }
